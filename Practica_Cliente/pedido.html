@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PEDIDO - Pasteles Solomito </title>
+</head>
+<body>
+	<div id="header">
+		<ul>
+			<li>
+				<a href="main.html">MENU</a>
+			</li>
+			<li  class="selected">
+				<a href="pedido.html">PEDIDO</a>
+			</li>
+			<li>
+				<a href="informacion.html">INFORMACION</a>
+			</li>
+		</ul>
+	</div>
+	<div>
+		<div>
+			<div>
+				<h1>PEDIDO</h1>
+				<p>
+					Formulario para pedidos, rellene toda la informacion solicitada.
+				</p>
+			</div>
+		</div>
+		<div>
+			<div>
+				<h2>Ejemplo de Formulario</h2>
+    			<form action="/accion.js" id="form1" method="post">
+        			<label for="nombre">Nombre:</label>
+					<input type="text" id="nombre" name="nombre"><br><br>
+					<label for="direccion">Direccion:</label>
+					<input type="text" id="direccion" name="direccion"><br><br>
+					<label for="numero">Telefono:</label>
+					<input type="text" id="numero" name="numero"><br><br>
+					<label for="correo">Correo:</label>
+					<input type="text" id="correo" name="correo"><br><br>
+
+
+					<label for="tamaño">Selecciona un sabor para tu pastel</label><br>
+    				<input list="tamaño">
+    				<datalist id="tamaño">
+        			<option value="1 kilo">
+        			<option value="1/2 kilo">
+        			<option value="1/4 kilo">
+        			<option value="personalizado">
+    				</datalist>
+    				<br><br>
+
+					<label for="sabor">Selecciona un sabor para tu pastel</label><br>
+    				<input list="sabor">
+    				<datalist id="sabor">
+        			<option value="Chocolate">
+        			<option value="Manzana">
+        			<option value="Naranja">
+        			<option value="Mango">
+        			<option value="Guayaba">
+    				</datalist>
+    				<br><br>
+
+    				<label for="decoracion">Selecciona una decoracion para tu pastel</label><br>
+					<input list="decoracion">
+    				<datalist id="decoracion">
+        			<option value="infantil">
+        			<option value="eventos">
+        			<option value="personalizado">
+    				</datalist>
+    				<br><br>
+
+					<input type="submit" value="Submit">
+        			<input type="reset">
+
+					
+    			</form>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
